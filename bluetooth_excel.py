@@ -2,7 +2,7 @@ import serial
 import xlwings as xw
 
 # CONFIGURAÇÕES:
-COM_PORT = 'COM5'     # Troque pela porta COM do seu módulo HC-05
+COM_PORT = 'COM10'     # Troque pela porta COM do seu módulo HC-05
 BAUD_RATE = 9600
 
 # Conectar à porta serial
