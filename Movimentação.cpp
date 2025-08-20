@@ -1,40 +1,3 @@
-/*
-              **********************************************
-                      PROJETO MINI GOL QUADRADO RC
-                           VERSÃO BLUETOOTH
-                      CANAL ARDUINO PARA MODELISMO
-              **********************************************
-
-
-  Para conferir as Vídeo Aulas Gratuítas desse projeto, acesse:
-  https://www.youtube.com/ArduinoParaModelismo
-
-  Aprenda Arduino para modelismo: https://www.arduinoparamodelismo.com
-
-   Atenção Siga atentamente as instruções das vídeos aulas e e-book para a montagem do hardware
-   
-   Playlist com todos os vídeos deste projeto:https://www.youtube.com/playlist?list=PLcWVEPpBZCFrAGE-x5P0iJ3kxTMPvpj4V
-   
-  Desenvolvido por Aldeir de Souza Moreira - aldeirsm@gmail.com - https://www.youtube.com/ArduinoParaModelismo
-  C 2024 - Todos os direitos reservados
-*/
-
-/* DÊ UM PASSO A MAIS...
-
-🚀 Transforme suas miniaturas em Verdadeiras obras-primas com o Curso de Arduino para Modelismo 
-Se Inscreva Aqui 👉 https://arduinoparamodelismo.com
-
-✅ Aprenda a usar Arduino e ESP32 para dar Vida às suas Miniaturas,
-Controlando tudo via controle remoto de uma forma simples e com baixo custo!
-
-Você ainda vai contar com suporte via WhatsApp diretamente comigo, Aldeir Moreira!
-
-💡 Realize seu sonho e ainda tenha a possibilidade de fazer uma renda extra, automatizando miniaturas por encomendas!  
-Se Inscreva Aqui 👉 https://arduinoparamodelismo.com
-
-*/
-
-
 #include <Servo.h>  // Incluindo biblioteca Servo
 
 
@@ -85,54 +48,15 @@ void setup() {
   pinMode(11, INPUT);
 
 
-  ///////////// Build panel in app
-
-  // Serial.println("*.kwl");
-  // Serial.println("clear_panel()");
-  // Serial.println("set_grid_size(10,5)");
-  // Serial.println("add_text(5,1,medium,L,Volts,255,0,0,)");
-  // Serial.println("add_text(4,1,medium,R,4.20,255,0,0,T)");
-  // Serial.println("add_text(3,2,large,L,PROJETO GOL RC,245,240,245,)");
-  // Serial.println("add_text(4,3,large,C,            ARDUINO PARA MODELISMO,245,240,245,)");
-  // Serial.println("add_text(3,4,small,L,       www.ArduinoParaModelismo.com,245,240,245,)");
-  // Serial.println("add_button(2,4,11,G,g)");
-  // Serial.println("add_button(0,0,4,I,i)");
-  // Serial.println("add_button(9,0,5,H,h)");
-  // Serial.println("add_button(9,4,16,E,e)");
-  // Serial.println("add_switch(7,4,1,P,p,0,0)");
-  // Serial.println("add_switch(0,4,1,F,f,0,0)");
-  // Serial.println("add_free_pad(7,1,10,170,0,50,C,D)");
-  // Serial.println("add_free_pad(0,1,0,510,0,50,A,B)");
-  // Serial.println("add_gauge(2,0,4,0,100,100,Z,3.5v,4.2v,10,10)");
-  // Serial.println("add_buzzer(6,1,1,S,a,false,100.00)");
-  // Serial.println("add_led(3,1,1,L,0,255,0)");
-  // Serial.println("set_panel_notes(,,,)");
-  // Serial.println("run()");
-  // Serial.println("*");
+ 
 
   
   Serial.println("*.kwl");
   Serial.println("clear_panel()");
   Serial.println("set_grid_size(10,5)");
-  Serial.println("add_text(5,1,medium,L,Volts,255,0,0,)");
-  Serial.println("add_text(4,1,medium,R,4.02,255,0,0,T)");
-  Serial.println("add_text(3,2,large,L,PROJETO GOL RC,245,240,245,)");
-  Serial.println("add_text(4,3,large,C,            ARDUINO PARA MODELISMO,245,240,245,)");
-  Serial.println("add_text(3,4,small,L,       www.ArduinoParaModelismo.com,245,240,245,)");
-  Serial.println("add_button(2,4,11,G,g)");
-  Serial.println("add_button(9,0,5,H,h)");
-  Serial.println("add_button(9,4,16,E,e)");
-  Serial.println("add_button(8,0,4,I,i)");
-  Serial.println("add_button(1,0,22,X,x)");
-  Serial.println("add_button(0,0,21,Z,z)");
-  Serial.println("add_switch(7,4,1,P,p,0,0)");
-  Serial.println("add_switch(0,4,1,F,f,0,0)");
+  Serial.println("add_text(4,2,large,C,TransitApp,245,240,245)");
   Serial.println("add_free_pad(7,1,10,170,0,50,C,D)");
   Serial.println("add_free_pad(0,1,0,510,0,50,A,B)");
-  Serial.println("add_gauge(2,0,4,0,100,75,Z,3.5v,4.2v,10,10)");
-  Serial.println("add_buzzer(6,1,1,S,a,false,100.00)");
-  Serial.println("add_led(3,1,1,L,0,255,0)");
-  Serial.println("set_panel_notes(,,,)");
   Serial.println("run()");
   Serial.println("*");
  
@@ -154,20 +78,6 @@ void setup() {
 }
 
 
-/* DÊ UM PASSO A MAIS...
-
-🚀 Transforme suas miniaturas em Verdadeiras obras-primas com o Curso de Arduino para Modelismo 
-Se Inscreva Aqui 👉 https://arduinoparamodelismo.com
-
-✅ Aprenda a usar Arduino e ESP32 para dar Vida às suas Miniaturas,
-Controlando tudo via controle remoto de uma forma simples e com baixo custo!
-
-Você ainda vai contar com suporte via WhatsApp diretamente comigo, Aldeir Moreira!
-
-💡 Realize seu sonho e ainda tenha a possibilidade de fazer uma renda extra, automatizando miniaturas por encomendas!  
-Se Inscreva Aqui 👉 https://arduinoparamodelismo.com
-
-*/
 
 
 
@@ -214,10 +124,8 @@ DadosRecebidos = Serial.read();
     // Controle da Ponte H
     digitalWrite(8, LOW);            // ativa pino ponte H com valor LOW para que o veículo se movimente para frente
     digitalWrite(9, HIGH);            // ativa pino ponte H com o valor da variável Pot (controle de aceleração)
-    analogWrite(10, aux);
-    Serial.print(" Frente PWM: ");  // Mostra no Monitor Serial
-    Serial.println(aux);            // Mostra no Monitor Serial os valores de aux
-    TempLuzFreio = millis();        // variável TempSetaDireita recebe o tempo atual
+    digitalWrite(12, LOW);            // ativa pino ponte H com valor LOW para que o veículo se movimente para frente
+    digitalWrite(11, HIGH);         // variável TempSetaDireita recebe o tempo atual
                                     // Luz de Ré
   
 
@@ -233,9 +141,8 @@ DadosRecebidos = Serial.read();
   
     digitalWrite(8, HIGH);  // ativa pino ponte H com o valor da variável Pot (controle de aceleração)
     digitalWrite(9, LOW);  // ativa pino ponte H com valor LOW para que o veículo se movimente para trás
-    analogWrite(10, aux);
-    Serial.print(" Trás PWM: ");  // Mostra no Monitor Serial
-    Serial.println(aux);
+    digitalWrite(12, HIGH);  // ativa pino ponte H com o valor da variável Pot (controle de aceleração)
+    digitalWrite(11, LOW);  // ativa pino ponte H com valor LOW para que o veículo se movimente para trás
 
     //Serial.print(" Re PWM: "); // Mostra no Monitor Serial
     //Serial.println(aux); // Mostra no Monitor Serial os valores de aux
@@ -250,6 +157,8 @@ DadosRecebidos = Serial.read();
     
     analogWrite(8, LOW);  // desativa as duas portas da ponte h
     analogWrite(9, LOW);  // desativa as duas portas da ponte h
+    analogWrite(12, LOW);  // desativa as duas portas da ponte h
+    analogWrite(11, LOW);  // desativa as duas portas da ponte h
 
     // Luz de Ré
   
@@ -268,16 +177,5 @@ DadosRecebidos = Serial.read();
     // }
     }
   }
-   if (DadosRecebidos == 'Z') {
-    Velocidade = 1;
-    tone(4, 400, 100);
-  }
-  if (DadosRecebidos == 'X') {
-    Velocidade = 2;
-    tone(4, 400, 100);
-    delay(100);
-    tone(4, 200, 100);
-  }
+   
 }
-
-
