@@ -42,4 +42,4 @@ finally:
     ser.close()
     print("[OK] Porta serial fechada.")
 
-#python bluetooth_excel.py
+#Prompt:python bluetooth_excel.py

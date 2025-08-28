@@ -16,11 +16,7 @@ void setup() {
   pinMode(8, OUTPUT);   // Led - Seta Direita Dianteira
   pinMode(9, OUTPUT);   // Led - Lanterna / Luz de Freio / Luz de Ré / Seta Direita Trazeira
  
-
-
- 
-
-  
+  // Configuração inicial do painel do aplicativo TransitApp
   Serial.println("*.kwl");
   Serial.println("clear_panel()");
   Serial.println("set_grid_size(10,5)");

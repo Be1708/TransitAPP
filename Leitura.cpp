@@ -36,7 +36,7 @@ void loop() {
   long nd2 = d2*-1;
   long nd3 = d3*-1;
 
-  String linha = String(nd1) + "," + String(nd2) + "," + String(nd3);
+  String linha = String(nd1) + "," + String(nd2) + "," + String(nd3); // Formata a linha
 
   Serial.println(linha);   // Envia para USB
   BT.println(linha);       // Envia para Bluetooth
